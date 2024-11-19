@@ -52,5 +52,5 @@ import ReactDOM from "react-dom/client";
 // )]);
 
 // =======Root Create & Render=========
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(nesting);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(heading);
