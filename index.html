@@ -9,11 +9,15 @@
 <body>
 
   <div id="root">
-    <h1>Hello World, From HTML !!</h1>
     <h2>React Did Not Render</h2>
   </div>
   <h3>Life Outside the Root!!</h3>
 
-  <script src="./App.js"></script>
+  <script>
+    const heading = document.createElement("h1");
+    heading.innerHTML = "Hello World From Javascript";
+    const root = document.getElementById("root");
+    root.appendChild(heading);
+  </script>
 </body>
 </html>
