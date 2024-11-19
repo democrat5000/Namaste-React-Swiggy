@@ -34,6 +34,21 @@
 //         ])
 //       )])
 
+// ====React Shorthand=======
+const e = React.createElement
+
+const nesting = e("div", {id:parent},
+  [e("div", {}, 
+[
+  e("h1", {}, "I am h1 tag"),
+  e("h2", {}, "I am h2 tag")
+],
+  e("div", {}, 
+[
+  e("h1", {}, "I am h1 tag"),
+  e("h2", {}, "I am h2 tag")
+])
+)]);
 
 // =======Root Create & Render=========
 const root = ReactDOM.createRoot(document.getElementById("root"));
