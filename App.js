@@ -51,6 +51,29 @@ import ReactDOM from "react-dom/client";
 // ])
 // )]);
 
+// ===Component Composition===
+
+// const HeadingComponent = ()=> {
+//   return (
+//     <h1>I am a heading component</h1>
+//   )
+// }
+
+// const GreetingComponent = ()=> {
+//  return (<h2>I am a nested component</h2>) 
+// }
+
+// const ComponentComposition = ()=> {
+//   return (
+//     <div>
+//       <HeadingComponent/>
+//       <GreetingComponent/>
+//     </div>
+    
+//   )
+// }
+
+
 // =======Root Create & Render=========
 // const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
+// root.render(<ComponentComposition/>);
