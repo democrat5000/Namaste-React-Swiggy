@@ -1,5 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import Body from "./components/Body";
+
+
 // ======Hello World From React ==================
 // const heading = React.createElement("h1", {className: "heading"}, "Hello World From React!!");
 
@@ -75,5 +80,19 @@ import ReactDOM from "react-dom/client";
 
 
 // =======Root Create & Render=========
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<ComponentComposition/>);
+
+
+
+const AppLayout = ()=> {
+  return(
+    <div className="app">
+      <Header/>
+      <Banner/>
+      <Body/>
+    </div>
+  )
+}
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout/>);
